@@ -7,7 +7,7 @@ header
 		.col.text-right
 			ul
 				li
-					router-link.btn(to="/carrito") Ir a carrito
+					router-link.btn(to="/carrito") Ir a carrito ({{$store.state.shopCar.length==1?`${$store.state.shopCar.length} producto`:`${$store.state.shopCar.length} productos`}})
 </template>
 <style lang="stylus">
 header
@@ -16,6 +16,11 @@ header
 	background-color #FFFFFF
 	height auto !important
 	box-shadow 1px 4px 4px #409eff2b
+	position fixed
+	top 0
+	left 0
+	width 100%
+	z-index 1
 	.col
 		vertical-align middle
 		display inline-block

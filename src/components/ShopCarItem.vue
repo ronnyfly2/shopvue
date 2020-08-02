@@ -1,9 +1,11 @@
 <template lang="pug">
 div
-	ul.list-group
+	.col-12.text-center(v-if="items.length==0")
+		p No tiene ningún producto en el carrito
+	ul.list-group(v-if="items.length>0")
 		li.list-group-item(v-for="item in items" :key="item.id") {{ item.title }} - ${{ item.price }}
 			button.btn.badge.badge-danger.float-right(@click="removerItem(item)") Eliminar
-	.card.p-3.my-5
+	.card.p-3.my-3
 		h4.text-center Total: ${{ total }}
 	button.btn.btn-info.form-control(:disabled="items.length === 0" @click="payAll") Pagar ahora
 </template>

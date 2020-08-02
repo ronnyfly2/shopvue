@@ -1,6 +1,6 @@
 <template lang="pug">
 .row
-	.col-md5.my-12
+	.col-md-12.my-12
 		ShopCarItem(:items="shopCar" v-on:payOrder="payOrder" v-on:removeItem="removeProduct")
 </template>
 <script>

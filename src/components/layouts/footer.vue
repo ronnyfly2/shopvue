@@ -11,6 +11,8 @@ footer
 							a(href="mailto: ronny@codersperu.com" target="_blank")  ronny@codersperu.com
 </template>
 <style lang="stylus">
+footer
+	margin-top 30px
 .footer
 	background-color #fff
 	color #4D4646
