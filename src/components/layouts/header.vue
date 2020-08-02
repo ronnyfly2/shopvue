@@ -1,10 +1,10 @@
 <template lang="pug">
 header
 	.row.box_center
-		.col.text-left
+		.col-sm-6.text-left
 			router-link(to="/")
 				h1 Shop
-		.col.text-right
+		.col-sm-6.text-right
 			ul
 				li
 					router-link.btn(to="/carrito") Ir a carrito ({{$store.state.shopCar.length==1?`${$store.state.shopCar.length} producto`:`${$store.state.shopCar.length} productos`}})
@@ -21,11 +21,11 @@ header
 	left 0
 	width 100%
 	z-index 1
-	.col
+	.col-sm-6
 		vertical-align middle
 		display inline-block
-		width 50%
-		padding 25px 0
+		padding-top 25px
+		padding-bottom 25px
 	.text
 		&-right
 			text-align right
@@ -33,7 +33,7 @@ header
 			text-align left
 	h1
 		max-width 170px
-		color #409EFF
+		color #007bff
 		font-size 20px
 		font-weight 800
 		padding-top 10px
@@ -51,20 +51,20 @@ header
 			display inline-block
 			vertical-align middle
 			a
-				color #409EFF
+				color #007bff
 			.btn
 				background #ffffff
 				border-radius 4px
 				height 48px
-				color #409EFF
-				border 2px solid #409EFF
+				color #007bff
+				border 2px solid #007bff
 				font-weight 800
 				line-height 1
 				padding 14px 23px
 				&:focus
 					box-shadow 0 0 1px 2px rgba(64, 58, 141, .4)
 				&:hover
-					color #409EFF
+					color #007bff
 			&:last-child
 				margin-right 0
 </style>

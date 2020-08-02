@@ -1,5 +1,5 @@
 <template lang="pug">
-.row
+.row.box_center
 	.col-md-12.my-12
 		ShopCarItem(:items="shopCar" v-on:payOrder="payOrder" v-on:removeItem="removeProduct")
 </template>

@@ -7,7 +7,7 @@ div
 			button.btn.badge.badge-danger.float-right(@click="removerItem(item)") Eliminar
 	.card.p-3.my-3
 		h4.text-center Total: ${{ total }}
-	button.btn.btn-info.form-control(:disabled="items.length === 0" @click="payAll") Pagar ahora
+	button.btn.btn-primary.form-control(:disabled="items.length === 0" @click="payAll") Pagar ahora
 </template>
 
 <script>

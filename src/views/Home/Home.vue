@@ -1,5 +1,5 @@
 <template lang="pug">
-.row.home
+.row.home.box_center
 	.col-md-12
 		.row
 			.col-md-6(v-for="(prod, key) in productsList" :key="prod.id")
